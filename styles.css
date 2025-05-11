@@ -1,0 +1,247 @@
+/* 
+    Name: Sania Ayachit
+    Date: 03/09/2025
+    
+*/
+
+/* General Layout */
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(15, 13, 13);
+    color: #333;
+}
+
+/* Grid Image Layout used across seasonal pages */
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-description {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 8px;
+}
+
+
+
+/* Skip Navigation (accessibility) */
+.skipnavigation {
+    margin: 0;
+}
+
+.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+}
+
+.skipnavigation a:focus {
+    position: static;
+    left: auto;
+    z-index: 1000;
+    background: #263e46;
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Navigation Bar */
+.sitenavigation {
+    background-color: #3d626d;
+    text-align: left;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sitenavigation p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(1, 1, 1);
+    margin: 0;
+}
+
+.sitenavigation a {
+    font-size: 0.9em;
+    color: white;
+    text-decoration: underline;
+    padding: 6px 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.sitenavigation a:hover,
+.sitenavigation a:focus {
+    background-color: #668995;
+    text-shadow: 1px -1px 0 black;
+}
+
+/* Header Styling */
+header {
+    background-color: #263e46;
+    text-align: center;
+    padding: 2em 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #a7dbea;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.tagline:hover {
+    color: #acd4e9;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    padding: 2em 1em;
+    background-color: #dbe9ec;
+    box-sizing: border-box;
+}
+
+/* Article Layout */
+article {
+    background-color: #263e46;
+    margin: 1em auto;
+    padding: 1em;
+    text-align: center;
+    max-width: 80%;
+    border-radius: 12px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #222;
+}
+
+h3 .left-align-list {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 40px;
+}
+
+.specials h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.specials p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #4b878e;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+/* Concert list */
+.concert-list {
+    list-style-type: none;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #333;
+    text-align: center;
+}
+
+/* Styled table */
+.event-table {
+    width: 90%;
+    margin: 1em auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.event-table th {
+    background-color: #263e46;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.event-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.event-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.hike-list {
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    color: #f2f6f5;
+    font-size: 1.1em;
+    padding: 0;
+}
+
+/* Footer Styling */
+footer {
+    font-family: cursive;;
+    background-color: #263e46;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    color: white;
+    margin-top: 3em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    transition: color 0.3s ease;
+}
+
+footer:hover {
+    color: rgb(120, 175, 180);
+}
+
+/* Print View */
+@media print {
+    nav, .sitenavigation, footer {
+        display: none;
+    }
+}
